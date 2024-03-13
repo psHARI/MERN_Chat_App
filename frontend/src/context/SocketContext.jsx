@@ -18,7 +18,7 @@ const {authUser} = useAuthContext();
 
  useEffect(() => {
     if(authUser) {
-        const socket = io("http://localhost:5000" , {
+        const socket = io("https://vibely-i08k.onrender.com" , {
             query: {
                 userId: authUser._id,
             },
